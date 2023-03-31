@@ -1,0 +1,1 @@
+console.log('ini contoh panggil yaaaaa')

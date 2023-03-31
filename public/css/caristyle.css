@@ -1,0 +1,356 @@
+:root {
+    --dark-blue500: #091B6F;
+    --dark-blue400: #0D28A6;
+    --dark-blue300: #5E70C4;
+    --dark-blue200: #AEB7E1;
+    --dark-blue100: #CFD4ED;
+    --lime-green100: #DEF1DF;
+    --lime-green200:#C9E7CA;
+    --lime-green300: #92D094;
+    --lime-green400: #5CB85F;
+    --lime-green500: #3D7B3F;
+    --bg-main: #F1F3FF;
+    --bg-secondary: #0D28A6;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif !important;
+
+}
+
+header{
+    background: #F1F3FF;
+}
+
+
+.bg-header {
+    background-color: white !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+
+.bg-dark-blue100 {
+    background: var(--dark-blue100);
+}
+
+.bg-dark-blue200 {
+    background: var(--dark-blue200);
+}
+
+.bg-dark-blue300 {
+    background: var(--dark-blue300);
+}
+
+.bg-dark-blue400 {
+    background: var(--dark-blue400);
+}
+
+.bg-dark-blue500 {
+    background: var(--dark-blue500);
+}
+
+.bg-lime-green100 {
+    background: var(--lime-green100);
+}
+
+.bg-lime-green200 {
+    background: var(--lime-green200);
+}
+
+.bg-lime-green300 {
+    background: var(--lime-green300);
+}
+
+.bg-lime-green400 {
+    background: var(--lime-green400);
+}
+
+.bg-lime-green500 {
+    background: var(--lime-green500);
+}
+
+.bg-main {
+    background: var(--bg-main);
+}
+.w-full {
+    width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+ 
+.h-half {
+    height: 50%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.btn-color-theme{
+	color: white !important;
+	background-color: #5CB85F;
+}
+
+a:hover{
+	color: gray !important;
+}
+       
+.btn-outline-theme {
+	font-family: "Open Sans";
+	color: black !important; 
+	font-weight: bold;
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link:not(.btn) {
+    color: black !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+
+.navbar .navbar-nav li{
+	font-size: 14px;
+  display: flex;
+  list-style: none;
+  justify-content: content-end;
+}
+
+.navbar-nav li a {
+  color: white !important;
+}
+
+.heroSection {
+   padding-left: 9.44vw;
+}
+
+.heroSection h1{
+    text-align: left;
+}
+.form-container {
+  bottom: 50px;
+  z-index: 1080;
+}
+.form-container .card {
+  padding: 20px;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px #00000026;
+}
+.form-label {
+  font-size: 14px;
+}
+.form-item {
+  width: 100%;
+  font-size: 15px;
+}
+input[type="date"]::before {
+  color: #999999;
+  content: attr(placeholder);
+}
+input[type="date"] {
+  color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #666666;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "" !important;
+}
+input[type="time"]::before {
+  color: #999999;
+  content: attr(placeholder);
+}
+input[type="time"] {
+  color: #ffffff;
+}
+input[type="time"]:focus,
+input[type="time"]:valid {
+  color: #666666;
+}
+input[type="time"]:focus::before,
+input[type="time"]:valid::before {
+  content: "" !important;
+}
+
+.driver{
+    margin-right:2% ;
+}
+.date{
+    margin-right:2% ;
+}
+.time{
+    margin-right:2% ;
+}
+.penumpang{
+    margin-right:2% ;
+}
+
+.btn-cari {
+  color: white !important;
+  background-color: #5CB85F;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.description-text {
+    width: 468px;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+}
+
+.hasil-pencarian {
+    margin-top: 40px;
+}
+
+.card-pencarian {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-pencarian-body .car-thumbnail {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-pencarian img {
+    width: 100%;
+}
+
+.deskripsi-text .marklist {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 16px 0px 16px 0;
+}
+
+.deskripsi-text .marklist img {
+    width: 24px;
+    margin-right: 9px;
+}
+
+
+.mobil-pencarian {
+    width: 345px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.pencarian-body-text {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.pencarian-body-text .harga-mobil {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+#cars-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+}
+.card-item {
+  background: #fff;
+  width: 333px;
+  height: 586px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 24px;
+}
+.image-car {
+  width: 100%;
+  height: 40%;
+}
+.text-description {
+  margin-top: 20px !important;
+}
+.text-description p {
+  font-size: 14px;
+}
+.text-description .price {
+  font-size: 16px;
+  font-weight: 700;
+}
+.capacity-item {
+  display: flex;
+  column-gap: 20px;
+}
+.capacity-item i {
+  font-size: 20px;
+}
+.btn-pilih {
+  color: white !important;
+  background-color: #5CB85F;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+
+
+@media (max-width:992px) {
+
+    #car-container {
+        border-top-right-radius: 10em;
+        bottom: -10% !important;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    #car-image {
+        bottom: 10%;
+        width: 100%;
+    }
+
+    .w-lg-full {
+        width: auto;
+    }
+
+@media (max-width:425px) {
+    #car-container {
+        bottom: -30% !important;
+    }
+}
+
+@media (min-width : 992px) {
+  .offcanvas {
+    visibility      : visible;
+    position        : relative;
+    background      : none;
+    border          : none;
+    justify-content : end;
+    color           : red;
+  }
+}
+@media (max-width : 992px) {
+  .offcanvas {
+    width : 250px !important;
+  }
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-100%);
+  }
+}
+
+

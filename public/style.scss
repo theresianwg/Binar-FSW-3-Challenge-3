@@ -1,0 +1,223 @@
+@import "node_modules/rfs/scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+* {
+  font-family: "Helvetica", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.main-section__limegreen {
+  background-color: #f1f3ff;
+}
+
+.bg-card__limegreen {
+  background-color: #f1f3ff;
+}
+
+.bg-card__darkblue {
+  background-color: #0d28a6 !important;
+}
+
+.show-neighbors {
+}
+.show-neighbors .item__third:first-child,
+.show-neighbors .item__third:last-child {
+  display: none;
+}
+@media (min-width: 500px) {
+  .show-neighbors .carousel-indicators {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  .show-neighbors .carousel-control-prev,
+  .show-neighbors .carousel-control-next {
+    background: rgba(255, 255, 255, 0.3);
+    width: 25%;
+    z-index: 11;
+    /* .carousel-caption has z-index 10 */
+  }
+  .show-neighbors .carousel-inner {
+    width: 150%;
+    left: -25%;
+  }
+  .show-neighbors .carousel-item-next:not(.carousel-item-left),
+  .show-neighbors .carousel-item-right.active {
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
+  }
+  .show-neighbors .carousel-item-prev:not(.carousel-item-right),
+  .show-neighbors .carousel-item-left.active {
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
+  }
+  .show-neighbors .item__third {
+    display: block !important;
+    float: left;
+    position: relative;
+    /* captions can now be added */
+    width: 33.33333333%;
+  }
+  /* .carousel-control-prev {
+      left: 35% !important;
+    }
+    .carousel-control-next {
+      right: -39% !important;
+    }*/
+}
+.carousel-control-prev {
+  left: 45% !important;
+}
+.carousel-control-next {
+  right: -39% !important;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block !important;
+  width: 35px !important;
+  height: 35px !important;
+  background: 50%/60% 100% no-repeat !important;
+}
+
+.arah-carousel {
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.tombol-carousel {
+  background-color: #6f6f6f; /* Green */
+  border: #bbbbbb;
+  color: rgb(2, 2, 2);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.tombol-carousel1 {
+  background-color: #4caf50;
+  color: rgb(0, 0, 0);
+  border: 2px solid #4caf50;
+}
+
+.tombol-carousel1:hover {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .carousel-control-prev {
+    left: 40% !important;
+  }
+  .carousel-control-next {
+    right: -15% !important;
+  }
+  .why-us {
+    height: 12rem !important;
+    margin-bottom: 1.7rem;
+  }
+  .banner-mobil img {
+    padding-left: 2rem;
+  }
+  #service-section img {
+    width: 75%;
+  }
+  #faq-section {
+    h3 {
+      text-align: center;
+      @include rfs(2rem);
+    }
+    p {
+      text-align: center;
+      @include rfs(1rem);
+    }
+  }
+}
+
+.jumbotron {
+  h1 {
+    @include rfs(2rem);
+    font-weight: 600;
+  }
+  p {
+    @include rfs(0.9rem);
+  }
+}
+
+.why-us {
+  font-size: 0.8rem;
+  height: 12rem;
+  text-align: justify;
+}
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 0; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 70%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #f1f3ff;
+    transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
+      -webkit-transform 0.3s ease-in-out;
+    z-index: 999999;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: 999999;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  .overlay.open {
+    display: block;
+    z-index: 1029;
+  }
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  margin-left: auto;
+}
+
+.filterForm{
+  top:62%;
+}
+
+.filterForm .card{
+  z-index:1072;
+}
+
+span{
+  position: absolute;
+  margin-left: 5px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+input{
+  padding-left: 25px;
+}
+
+.ui-timepicker-standard{
+  z-index: 1080!important;
+}
